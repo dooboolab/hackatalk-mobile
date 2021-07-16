@@ -21,7 +21,7 @@
     "migrate": "prisma migrate deploy",
     "migrate:reset": "dotenv -e ./dotenv/.env -- prisma migrate reset",
     "migrate:dev": "dotenv -e ./dotenv/.env -- prisma migrate dev",
-    "migrate:deploy": "dotenv -e ./dotenv/prod.env -- prisma migrate deploy",
+    "migrate:deploy": "dotenv -e ./dotenv/.env -- prisma migrate deploy",
     "db-push:local": "dotenv -e ./dotenv/.env -- prisma db push",
     "db-push:test": "dotenv -e ./dotenv/test.env -- prisma db push",
     "studio": "dotenv -e ./dotenv/.env -- prisma studio",

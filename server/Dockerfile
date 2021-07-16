@@ -24,4 +24,4 @@ COPY --from=build /app/dist dist
 
 EXPOSE 4000
 
-CMD ["npx", "dotenv",  "-e", "./dotenv/prod.env", " -- ", "yarn", "prod"]
+CMD ["npx", "dotenv",  "-e", "./dotenv/.env", " -- ", "yarn", "prod"]
